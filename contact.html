@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -43,7 +38,7 @@
         </h1>
         <p>Wypełnij formę aby skotaktować się z naszym biurem.</p>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form action="process.php">
           <div class="form-group">
             <label for="name">Imię i nazwisko</label>
             <input type="text" name="name" id="name" />
@@ -57,16 +52,6 @@
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" />
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Wybierz temat:</label>
-            <select id="subject" name="subject">
-              <option value="inne">Inne</option>
-              <option value="ozonowanie">Ozonowanie</option>
-              <option value="jebac">Jebac</option>
-              <option value="biede">Biede</option>
-            </select>
           </div>
 
           <div class="form-group">
@@ -85,7 +70,7 @@
           <h3>Lokalizacja</h3>
           <p>Przedborska 4, Paradyż</p>
         </div>
-        <div class="box box-contact">
+        <div class="box">
           <i class="fas fa-phone fa-3x"></i>
 
           <h3>Numer telefonu</h3>
