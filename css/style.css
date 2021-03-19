@@ -10,7 +10,7 @@
 
 html,
 body {
-font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.7em;
 }
 
@@ -40,7 +40,11 @@ p {
 
 .text-primary {
   color: #f7c08a;
-  /* color: #00adb5;   */
+}
+
+.heading-primary {
+  color: #f7c08a;
+  text-shadow: 2px 2px #8785a2;
 }
 
 .lead {
@@ -59,7 +63,6 @@ p {
 
 .btn:hover {
   background-color: #f7c08a;
-  /* background-color: #00adb5; */
   color: #333;
 }
 
@@ -148,8 +151,6 @@ p {
   height: 600px;
 }
 
-
-
 #showcase .showcase-content {
   color: #fff;
   text-align: center;
@@ -197,6 +198,13 @@ p {
 .box {
   float: left;
   width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box2 {
+  float: left;
+  width: 25%;
   padding: 50px;
   text-align: center;
 }
@@ -289,4 +297,35 @@ form-group {
   background: #444;
   color: #fff;
   padding: 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-cont {
+  width: 25%;
+  display: flex;
+  position: relative;
+}
+
+.gallery-cont a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-item {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px 8px 4px;
+  overflow: hidden;
+  height: 40vh;
+  object-fit: cover;
 }

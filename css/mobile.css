@@ -3,7 +3,8 @@
   text-align: center;
 }
 
-#navbar ul, #navbar ul li {
+#navbar ul,
+#navbar ul li {
   float: none;
 }
 
@@ -41,13 +42,15 @@
   float: none;
   width: 100%;
 }
-/* .box-contact {
-    padding: 50px 50px 0 50px;
 
-} */
+.box2 {
+  float: none;
+  width: 100%;
+}
 
 /* About */
-#about-info .info-right, #about-info .info-left {
+#about-info .info-right,
+#about-info .info-left {
   float: none;
   width: 100%;
 }
@@ -64,4 +67,10 @@
 /* Contact */
 #contact-info .box {
   border-bottom: #444 dotted 1px;
+}
+
+.gallery-cont {
+  flex: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
