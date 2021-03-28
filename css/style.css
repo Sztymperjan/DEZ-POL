@@ -400,6 +400,7 @@ form-group {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  background: #f7c08a;
 }
 
 .plan {
